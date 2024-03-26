@@ -1,0 +1,804 @@
+%YAML 1.1
+--- !Scene &1
+name: !<str> ""
+guid: {a: 7875085725817850609, b: 329766013828765107}
+editSceneGuid: {a: 0, b: 0}
+calibrateVer: !<str> V5
+entities:
+  - __class: Entity
+    name: !<str> 2D Background Effects
+    guid: {a: 4939107203275377378, b: 4643789328749505420}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 2}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 4786890364598842370, b: 10645156013403229573}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 1
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> General
+    guid: {a: 4198415936017778745, b: 14765787784143921059}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 7}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 13280872629729725333, b: 11049665368682058627}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 8001
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> Face Image
+    guid: {a: 12484940186304493914, b: 13521338272835198906}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 10}
+      - __class: FaceCapture
+        name: !<str> ""
+        guid: {a: 11260614740581129809, b: 2734628393276558986}
+        enabled: true
+        faceid: 0
+        captureType:
+          __class: CaptureType
+          value: HUMAN
+        captureVersion:
+          __class: CaptureVersion
+          value: SOLVEPNP
+        alignoffset: {x: 0, y: 0}
+        alignz: 5
+        isGlobal: true
+        useSceneCameraFov: false
+        isPictureMode: false
+        isFaceCaptureEnable: true
+        calirateVersion:
+          __class: CalibrationType
+          value: V5
+        nearPlane: 0.1000000014901161
+        farPlane: 10000
+        useSceneCameraNearFar: false
+        behaviorWhenTrackerDisappear:
+          __class: BehaviorWhenTrackerDisappear
+          value: ALIGN_VISIBILITY_WITH_TRACKER
+        entityRotateType:
+          __class: EntityRotateType
+          value: ROTATE_AROUND_XYZ_AXIS
+    layer: 0
+  - __class: Entity
+    name: !<str> RandomSequencer [REPLACE TEXTURE]
+    guid: {a: 1965288597692592099, b: 4751974858846455731}
+    scene: {localId: 1}
+    selfvisible: false
+    components:
+      - {localId: 12}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 18179240389788327967, b: 3711782620776042119}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 3
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: custom://e7915e9b-0c8d-0328-b05d-383add3bc760}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 16.94915, y: 16.94915}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: LookAt
+        name: !<str> ""
+        guid: {a: 5640853136620415823, b: 3564301111993694863}
+        enabled: true
+        target: {localId: 9}
+        mode:
+          __class: LookAtMode
+          value: LOOK_AT_POINT
+        worldUp:
+          __class: LookAtWorldUp
+          value: OBJECT_Y
+        aim:
+          __class: LookAtDirection
+          value: Z
+        up:
+          __class: LookAtDirection
+          value: Y
+        offsetRotation: {x: 0, y: 0, z: 0}
+        flipAimUp: true
+    layer: 0
+  - __class: Entity
+    name: !<str> Camera
+    guid: {a: 884979045772163168, b: 8074726476798817442}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 9}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 13062555174515800951, b: 14056927660148220324}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 21
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 1
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: SORT_ORDER_AND_RENDERQUEUES
+    layer: 0
+  - __class: Entity
+    name: !<str> Title [REPLACE TEXTURE]
+    guid: {a: 18034142422720489043, b: 16943823763005148296}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 11}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 13208500467745969812, b: 3072911270453310120}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 2
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 33f3d237-5478-a4fc-5b3a-5f913e822e93--33f3d237-5478-a4fc-5b3a-5f913e822e93.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 17.77633, y: 20.16949}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: LookAt
+        name: !<str> ""
+        guid: {a: 8524222321011315744, b: 1742653616345991073}
+        enabled: true
+        target: {localId: 9}
+        mode:
+          __class: LookAtMode
+          value: LOOK_AT_POINT
+        worldUp:
+          __class: LookAtWorldUp
+          value: OBJECT_Y
+        aim:
+          __class: LookAtDirection
+          value: Z
+        up:
+          __class: LookAtDirection
+          value: Y
+        offsetRotation: {x: 0, y: 0, z: 0}
+        flipAimUp: true
+    layer: 0
+  - __class: Entity
+    name: !<str> TIP  [USE FACE PREVIEW VIDEO]
+    guid: {a: 15296290531266112965, b: 7981414246874758280}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 8}
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Camera
+    guid: {a: 4719872868775502885, b: 9583987794139979192}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 14}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 5047014079739205854, b: 6264706934285156767}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 20
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: SORT_ORDER_AND_RENDERQUEUES
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Foreground Effects
+    guid: {a: 5315435978929784003, b: 13743859279328557214}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 15}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 5616956550939932132, b: 15327277658565193119}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 9001
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> Screen Image
+    guid: {a: 5115905542990607574, b: 11555919516934999457}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 16}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5073499994910711883, b: 6880683850070635399}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 4
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 9234e571-c9cd-f0dc-36fb-e260ec0bdafb--9234e571-c9cd-f0dc-36fb-e260ec0bdafb.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Camera
+    guid: {a: 4932371716270259062, b: 6242927305630607770}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 3}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 4955757653105625436, b: 16025030853854353556}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 20
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: SORT_ORDER_AND_RENDERQUEUES
+    layer: 0
+  - __class: Entity
+    name: !<str> Portrait Segmentation
+    guid: {a: 5639344518235925057, b: 2697731612251897248}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 4}
+    layer: 0
+  - __class: Entity
+    name: !<str> Background
+    guid: {a: 5365186340608688258, b: 2614413303629534607}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 5}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 4801893041921103133, b: 3908083590370400658}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 0
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 0eb6f61e-94a2-78cf-3365-a31c0f2f1b51--0eb6f61e-94a2-78cf-3365-a31c0f2f1b51.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> Portrait
+    guid: {a: 4889401751183899947, b: 16221413556547063184}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 6}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5520180010367001200, b: 18333234025866782624}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 1
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: custom://31766639-9a98-d124-d33f-9269004c3289}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> ConfettiGlamBurst
+    guid: {a: 5763181213271005469, b: 15693002291762559621}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 17}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 4808243110582928242, b: 3698483381020423058}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 5
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: custom://d3a49a42-62d1-a8ed-2379-0ca0d89a60d1}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> Screen Image (1)
+    guid: {a: 5080868450151500908, b: 3758529870421615251}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 18}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5594799524476698736, b: 4736646229739151018}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 6
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: custom://1bdd2179-ec86-1e48-32ad-9a405334d9df}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5000015, y: -3.419404}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> Environment Light
+    guid: {a: 4830491160110343295, b: 7733318786121054624}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 13}
+      - __class: Envmap
+        name: !<str> ""
+        guid: {a: 5184850292093148068, b: 16773673554735341247}
+        enabled: true
+        envmapLayers: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        specularEnvmap: {localId: 1, path: 00000000-0000-0000-0000-000000000800--00000000-0000-0000-0000-000000000800.texture}
+        IBLMode: true
+        intensity: 1
+        rotation: 0
+    layer: 0
+visible: true
+config:
+  __class: Map
+msaa:
+  __class: MSAAMode
+  value: _4X
+jsScriptSystems:
+  - !<str> js/GraphSystem.js
+  - !<str> js/Main.js
+  - !<str> js/JSAssetSystem.js
+enableMultiTouch: false
+enableLightMultiPass: false
+pixelLightCount: 4
+resourceRendererType:
+  __class: RendererType
+  value: Auto
+--- !Transform &2
+name: !<str> ""
+guid: {a: 5617995821031882886, b: 8120192206903041983}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &3
+name: !<str> ""
+guid: {a: 5763243207585893383, b: 11851489071755680385}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 2}
+children:
+  - {localId: 4}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !ScreenTransform &4
+name: !<str> ""
+guid: {a: 5721600527016428712, b: 5101823929778416570}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 3}
+children:
+  - {localId: 5}
+  - {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &5
+name: !<str> ""
+guid: {a: 5397281685555212940, b: 6164215394606301581}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 4}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 2048.015, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &6
+name: !<str> ""
+guid: {a: 5302196686032564879, b: 15061058427589874600}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 4}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !Transform &7
+name: !<str> ""
+guid: {a: 17819553278506754116, b: 11693808448086408084}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 8}
+  - {localId: 9}
+  - {localId: 10}
+  - {localId: 13}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &8
+name: !<str> ""
+guid: {a: 1964250070929191261, b: 4188894636376523422}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 7}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &9
+name: !<str> ""
+guid: {a: 14722210171812686582, b: 1068903947619179197}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 7}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &10
+name: !<str> ""
+guid: {a: 2829832335500246357, b: 8490318349844245649}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 7}
+children:
+  - {localId: 11}
+  - {localId: 12}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &11
+name: !<str> ""
+guid: {a: 5785237729488120594, b: 3280092546547107985}
+enabled: true
+localPosition: {x: 0.08546877, y: 8.288718, z: 3.26667}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 10}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &12
+name: !<str> ""
+guid: {a: 14359216296868896332, b: 1073937675378553279}
+enabled: true
+localPosition: {x: 0.08547196, y: 8.248699, z: 3.282936}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 10}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &13
+name: !<str> ""
+guid: {a: 4980416471966367000, b: 10198397074748382631}
+enabled: true
+localPosition: {x: 0, y: 30, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 7}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &14
+name: !<str> ""
+guid: {a: 4900349197029660691, b: 98621320372333969}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 15}
+children:
+  - {localId: 16}
+  - {localId: 17}
+  - {localId: 18}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &15
+name: !<str> ""
+guid: {a: 5448341695385456177, b: 480909577263664793}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 14}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !ScreenTransform &16
+name: !<str> ""
+guid: {a: 4943967954398280159, b: 1977844533580485535}
+enabled: true
+localPosition: {x: -7.948735, y: 18.57843, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 14}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: -254.3595, y: 594.5099}
+sizeDelta: {x: 195.7992, y: 277.1964}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &17
+name: !<str> ""
+guid: {a: 5604737380706367113, b: 14404299890074279601}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 14}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &18
+name: !<str> ""
+guid: {a: 5529910022183171459, b: 8363629745212306878}
+enabled: true
+localPosition: {x: 0, y: -7.03125, z: -42.67813}
+localScale: {x: 0.45, y: 0.5, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 14}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: -225}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32

@@ -1,0 +1,128 @@
+[
+  {
+    "guid": {
+      "a": "fc97c260-e8da-12c8-20f0-7d7692e91d3e",
+      "b": ""
+    },
+    "extraType": "ResItemPrefab",
+    "name": "ConfettiGlamBurst",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Prefab",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "7239961450414882818",
+    "data": [
+      {
+        "guid": {
+          "a": "637e290a-0b41-47b5-a62c-7d14bafa63b3",
+          "b": ""
+        },
+        "objGuid": "Guid(4963244399694401100, 17201922309839752073)",
+        "extraType": "Entity",
+        "name": "2D Camera",
+        "rttiType": "Entity",
+        "version": "0.1.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "expanded": true,
+        "type": "none",
+        "createdEffectNodeKey": "effect_node_2D_foreground"
+      },
+      {
+        "guid": {
+          "a": "18ac6074-89ce-41cd-061a-4c85ae9bf992",
+          "b": ""
+        },
+        "objGuid": "Guid(5352778129557275075, 4002744949947048637)",
+        "extraType": "Transform",
+        "name": "Transform",
+        "rttiType": "Transform",
+        "version": "0.1.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "expanded": true,
+        "editable": true,
+        "eulerAngle": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "guid": {
+          "a": "3865442d-e778-13ee-529b-5683e12e8285",
+          "b": ""
+        },
+        "objGuid": "Guid(5500843203061638741, 5759746290306817439)",
+        "extraType": "ScreenTransform",
+        "name": "Screen Transform",
+        "rttiType": "ScreenTransform",
+        "version": "0.1.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "expanded": true,
+        "editable": true
+      },
+      {
+        "guid": {
+          "a": "6db9f615-1fb4-2bcd-9f29-1d9de4759cde",
+          "b": ""
+        },
+        "objGuid": "Guid(4709565918298017811, 49522835232788141)",
+        "extraType": "Camera",
+        "name": "Camera",
+        "rttiType": "Camera",
+        "version": "0.2.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "expanded": true,
+        "editable": true
+      },
+      {
+        "guid": {
+          "a": "ed1b25d9-7264-e502-16a9-4dd25f53febd",
+          "b": ""
+        },
+        "objGuid": "Guid(4888552534359627580, 10818289614588122021)",
+        "extraType": "Entity",
+        "name": "ConfettiGlamBurst",
+        "rttiType": "Entity",
+        "version": "0.1.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "expanded": true,
+        "type": "none",
+        "createdEffectNodeKey": "effect_node_2D_foreground"
+      },
+      {
+        "guid": {
+          "a": "05945900-163a-c5dc-7a9d-73e06d087a0d",
+          "b": ""
+        },
+        "objGuid": "Guid(5248242544837152084, 16680069720398424229)",
+        "extraType": "Image",
+        "name": "Image",
+        "rttiType": "ImageRenderer",
+        "version": "0.1.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "expanded": true,
+        "editable": true,
+        "alphaNOPM": true,
+        "blendMode": "Normal",
+        "drawMode": "Normal",
+        "filledType": 0,
+        "startPoint": 0,
+        "filledRange": 1,
+        "ellipseX": 1,
+        "ellipseY": 1,
+        "sharedMaterial": "00000000-0000-0000-0000-000000000132",
+        "texture": "141e94cc-f29b-f9cc-8fa8-5f82fce10f5c"
+      }
+    ],
+    "effectNodeType": 6,
+    "dependencyData": []
+  }
+]

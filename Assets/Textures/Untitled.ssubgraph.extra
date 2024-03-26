@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "4154adc3-d33a-2664-6ad0-0f2160e02835",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Untitled",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "combinedWithNodeLibary": false
+  }
+]

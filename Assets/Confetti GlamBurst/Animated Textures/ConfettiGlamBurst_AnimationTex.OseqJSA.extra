@@ -1,0 +1,17 @@
+[
+  {
+    "guid": {
+      "a": "141e94cc-f29b-f9cc-8fa8-5f82fce10f5c",
+      "b": ""
+    },
+    "extraType": "JSAssetAnimSequence",
+    "name": "ConfettiGlamBurst_AnimationTex",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "7239961450414882818"
+  }
+]

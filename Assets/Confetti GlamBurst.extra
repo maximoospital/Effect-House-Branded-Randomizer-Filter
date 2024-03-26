@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "711f449f-9a36-c936-09de-0e8f3baeae38",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Confetti GlamBurst",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

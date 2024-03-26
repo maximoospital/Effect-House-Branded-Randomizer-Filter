@@ -1,0 +1,20 @@
+[
+  {
+    "guid": {
+      "a": "2bfc170d-e1c5-be31-9117-2e4ee8ca82c6",
+      "b": ""
+    },
+    "extraType": "ResItemTextureSequence",
+    "name": "Texture Sequences (1)",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "TextureSequence",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "premultiplyAlpha": false
+  }
+]
